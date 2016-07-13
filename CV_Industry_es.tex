@@ -18,6 +18,8 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+% spanish dict route /usr/share/liblouis/tables/es_ANY.dic
+
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
@@ -41,6 +43,8 @@
 
 \usepackage{longtable}
 \usepackage[spanish]{babel}
+\usepackage{array}
+\hyphenpenalty=10000
 
 \begin{document}
 
@@ -58,7 +62,7 @@
 \par{\centering{\huge \color{black} \textsc{ORJUELA Z\'U\~NIGA}}\bigskip\par} % Your name
 
 \color{OrangeRed}
-\section{Personal Information}
+\section{Información personal}
 \color{black}
 
 \begin{tabular}{rl}
@@ -75,20 +79,15 @@
 \section{Educación}
 \color{black}
 
-\begin{tabular}{rl}	
-
-\textsc{Presente} & \textsc{Estudiante de Maestría en Ciencias} - Física. Actualmente en \\ 
-\textsc{January 2015} & segundo año en la \textbf{Universidad de los Andes} en Bogot\'a, Colombia. \\
+\begin{tabular}{p{2.7cm}p{12cm}}	
+\textsc{Presente} \newline \textsc{Enero 2015} & \textsc{Estudiante de Maestría en Ciencias} - Física. Actualmente en segundo año en la \textbf{Universidad de los Andes} en Bogot\'a, Colombia. \\
 & Cursos relevantes: Bioinformática, Métodos computacionales avanzados. \\
 \\
-\textsc{Diciembre 2014} & \textsc{Físico} de la \textbf{Universidad Nacional de Colombia} en Bogot\'a, Colombia. \\ 
-\textsc{Agosto 2007} &  Promedio=3.9/5. Cursos relevantes: Métodos de simulación física,  
-\\& Herramientas computacionales, Programación y métodos numéricos,
-\\& Programación orientada a objetos. \\
+\textsc{Diciembre 2014} \newline \textsc{Agosto 2007} & \textsc{Físico} de la \textbf{Universidad Nacional de Colombia} en Bogot\'a, Colombia. Promedio=3.9/5. Cursos relevantes: Métodos de simulación física,  
+Herramientas computacionales, Programación y métodos numéricos,
+Programación orientada a objetos. \\
 \\
 \textsc{Junio 2007}& \textsc{}\textsc{Bachiller académico} del \normalsize\textbf{Colegio Champagnat} en Popay\'an, Colombia.\\
-%&\\
-
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -99,21 +98,23 @@
 \section{Experiencia en Investigación}
 \color{black}
 
-\begin{tabular}{rl}
+\begin{tabular}{p{2.2cm}p{12.5cm}}
 
-\textsc{Agosto 2015} & Investigador en el proyecto: ``Mechanical properties of lipid bilayers containing \\ 
-\textsc{Junio 2015}   & lysolipids'' financiado por el Comité de investigación y posgrados Universidad \\ 
-& de los Andes. Investigador principal: Antonio Manu Forero Shelton.  \\
-& Proponer, hacer pruebas y ejecutar modelos biofísicos para determinar el \\ & conjunto de parámetros que mejor reproduce las propiedades fisicoquímicas \\& del sistema estudiado. \\
+\textsc{Agosto 2015} \newline  \textsc{Junio 2015} & Investigador en el proyecto: ``Mechanical properties of lipid bilayers containing
+ lysolipids'' financiado por el Comité de investigación y posgrados Universidad
+de los Andes. Investigador principal: Antonio Manu Forero Shelton. \\
+& Proponer, hacer pruebas y ejecutar modelos biofísicos para determinar el conjunto de parámetros que mejor reproduce las propiedades fisicoquímicas del sistema estudiado. \\
 \\ 
-\textsc{Junio 2015} & Investigador asistente para el proyecto: ``Estudio de Factibilidad de uso de \\ 
-\textsc{Enero 2015} & detectores MEDIPIX para imágenes mamográficas'', etapa: ''Estudio de Tejidos  
-\\& Blandos Animales con Microcalciﬁcaciones Usando el Detector MEDIPIX''. \\
-& Diseñar y ejecutar pruebas que corroboraron la viabilidad del uso de detectores  \\& MEDIPIX para detección temprana y segura de cáncer de seno usando \\& tejido animal. \\
+\textsc{Junio 2015} \newline \textsc{Enero 2015} & Investigador asistente para el proyecto: ``Estudio de Factibilidad de uso de detectores MEDIPIX para imágenes mamográficas'', etapa: ''Estudio de Tejidos  
+Blandos Animales con Microcalciﬁcaciones Usando el Detector MEDIPIX''. \\
+& Diseñar y ejecutar pruebas que corroboraron la viabilidad del uso de detectores  
+MEDIPIX para detección temprana y segura de cáncer de seno usando 
+tejido animal. \\
 \\
-\textsc{Marzo 2014} & Proyecto de grado: ``Energetic analysis of the  extraction process of a phospholipid\\
-\textsc{Agosto 2013} & from a lipid bilayer using Molecular Dynamics simulations'' (Director: Jos\'e Daniel \\ & Casta\~no). \\
-& Extracción, procesamiento y visualización de datos para medir cambios en las \\ & propiedades de membranas a partir de las simulaciones.
+\textsc{Marzo 2014} \newline \textsc{Agosto 2013}  & Proyecto de grado: ``Energetic analysis of the  extraction process of a phospholipid
+from a lipid bilayer using Molecular Dynamics simulations'' (Director: Jos\'e Daniel Mu\~noz Casta\~no). \\
+& Extracción, procesamiento y visualización de datos para medir cambios en las 
+propiedades de membranas a partir de simulaciones.
 
 \end{tabular}
 
@@ -127,23 +128,20 @@
 \section{Experiencia Docente}
 \color{black}
 
-\begin{longtable}{rl}
-
-\textsc{Presente} & Profesor de Herramientas Computacionales en la Universidad de los Andes.\\ 
-\textsc{Agosto 2015} & Enseñar y ayudar a estudiantes de Ciencia e Ingeniería a desarrollar habilidades \\& de programación en un lenguaje de alto nivel (Python), con métodos y  \\& herramientas para análisis numérico y de datos básico.  \\
+\begin{longtable}{p{2.2cm}p{12.5cm}}
+\textsc{Presente} \newline \textsc{Agosto 2015} & Profesor de Herramientas Computacionales en la Universidad de los Andes. \newline Enseñar y ayudar a estudiantes de Ciencia e Ingeniería a desarrollar habilidades 
+de programación en un lenguaje de alto nivel (Python), con métodos y  
+herramientas para análisis numérico y de datos básico.  \\
 \\
-
-\textsc{Junio 2015} & Profesor de Laboratorio de Física II en la Universidad de los Andes, Bogot\'a.  \\ 
-\textsc{Enero 2015} & Entrenar estudiantes de Ciencias e Ingeniería en los métodos y \\& habilidades de la física experimental.\\
+\textsc{Junio 2015} \newline \textsc{Enero 2015} & Profesor de Laboratorio de Física II en la Universidad de los Andes, Bogot\'a. \newline Entrenar estudiantes de Ciencias e Ingeniería en los métodos y 
+ habilidades de la física experimental.\\
 \\
-
-\textsc{Junio 2015} & Profesor de Laboratorio de Física Básica II en la Universidad de los Andes. \\ 
-\textsc{Enero 2015} & Entrenar estudiantes de Ciencias de la Vida en los métodos y habilidades \\& de la física experimental.\\
+\textsc{Junio 2015} \newline \textsc{Enero 2015} & Profesor de Laboratorio de Física Básica II en la Universidad de los Andes. \newline Entrenar estudiantes de Ciencias de la Vida en los métodos y habilidades 
+de la física experimental.\\
 \\
-
-\textsc{Junio 2015} & Tutor de Matemáticas (bilingüe - en línea) para Latinhire Inc., Bogot\'a\\ 
-\textsc{Enero 2015} & Enseñar a estudiantes universitarios y de secundaria temas variados de \\& matemáticas hasta ecuaciones diferenciales incluyendo matemáticas \\& para estudiantes de negocios y de ciencias sociales.
-
+\textsc{Junio 2015} \newline \textsc{Enero 2015} & Tutor de Matemáticas (bilingüe - en línea) para Latinhire Inc., Bogot\'a. \newline Enseñar a estudiantes universitarios y de secundaria temas variados de 
+ matemáticas hasta ecuaciones diferenciales incluyendo matemáticas 
+ para estudiantes de negocios y de ciencias sociales.
 \end{longtable}
 
 %----------------------------------------------------------------------------------------
@@ -151,20 +149,15 @@
 %----------------------------------------------------------------------------------------
 
 \color{OrangeRed}
-\section{Schools and Events}
+\section{Escuelas y eventos}
 \color{black}
 
-\begin{tabular}{rl}
-
+\begin{tabular}{ll}
 \textsc{Agosto 2015} & 2015 Martini Coarse-Graining Workshop, Groningen, The Netherlands \\
-&\\
-
+\\
 \textsc{Septiembre 2014} &  2nd Workshop on Statistical Physics, Bogotá, Colombia, \\
-&\\
-
+\\
 \textsc{Febrero 2014} &  58th Annual Meeting of the Biophysical Society. San Francisco, CA. \\
-%&\\
-
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -179,17 +172,12 @@
 \section{Distinciones}
 \color{black}
 
-\begin{tabular}{rl}
-
-\textsc{Noviembre} 2007 & \textsc{Primer lugar} regional (Cauca) en las pruebas Saber 11 (ICFES) - 2007. \\ 
-&\\
-
-\textsc{Junio} 2007 & \textsc{Primer lugar} a nivel nacional en las pruebas Saber 11 (ICFES) - 2007-I. \\ 
-&\\
-
-\textsc{Junio} 2005 & \textsc{Primer lugar} en las pruebas regionales. XXIV Olimpiadas Colombianas  \\& de Matemáticas Nivel intermedio (competencia hasta la ronda final).  \\& Universidad Antonio Nariño.\\
-%&\\
-
+\begin{tabular}{p{2.8cm}p{11.9cm}}
+\textsc{Noviembre 2007} & \textsc{Primer lugar} regional (Cauca) en las pruebas Saber 11 (ICFES) - 2007. \\ 
+\\
+\textsc{Junio 2007} & \textsc{Primer lugar} a nivel nacional en las pruebas Saber 11 (ICFES) - 2007-I. \\ 
+\\
+\textsc{Junio 2005} & \textsc{Primer lugar} en las pruebas regionales. XXIV Olimpiadas Colombianas de Matemáticas Nivel intermedio (competencia hasta la ronda final). Universidad Antonio Nariño.\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -200,13 +188,10 @@
 \section{Lenguajes}
 \color{black}
 
-\begin{tabular}{rl}
+\begin{tabular}{ll}
 \textsc{Español:} & Competencia nativa \\
-
 \textsc{Inglés:} & Competencia profesional plena \\
-
 \textsc{Francés:} & Competencia limitada de trabajo \\
-
 \textsc{Alemán:} & Competencia básica \\
 \end{tabular}
 
@@ -218,15 +203,11 @@
 \section{Computer Skills}
 \color{black}
  
-\begin{tabular}{rl}
+\begin{tabular}{ll}
 Lenguajes de programación: & C++ (2.5 años), C (1.5 años), Python (1.5 años). \\ %, Matlab (6 months). \\
-
 Elementales: & GitHub, {\fb \LaTeX}, \textsc{UNIX}.\\
-
-Sistemas operativos: & Ubuntu, Windows.\\
-
+Sistemas operativos: & Ubuntu, Windows.
 %Other software: & GROMACS, VMD, PyMOL, Origin, Excel. \\
-
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -237,11 +218,10 @@ Sistemas operativos: & Ubuntu, Windows.\\
 \section{Habilidades, intereses y aficiones}
 \color{black}
 
-\begin{tabular}{rl}	
-
-\textsc{Habilidades:} & Analítico, intuición con los datos. Recursivo, diplomático, adaptable, con \\& muchas ganas de aprender.\\
-\textsc{Intereses:} & Data Science, analytics, programación y física (biofísica y química computacional,\\&  mecánica de fluidos computacional con métodos de Lattice Boltzmann). \\
-\textsc{Aficiones:} & Coro (miembro del coro universitario por 1.5 años), teatro (trabajé con una \\& compañía independiente por 4 años). \\
+\begin{tabular}{p{2.2cm}p{12.5cm}}	
+\textsc{Habilidades:} & Analítico, intuición con los datos. Recursivo, diplomático, adaptable, con  muchas ganas de aprender.\\
+\textsc{Intereses:} & Data Science, analytics, enseñanza, programación y física (biofísica y química computacional, mecánica de fluidos computacional con métodos de Lattice Boltzmann). \\
+\textsc{Aficiones:} & Teatro (trabajé con una compañía independiente por 4 años), coro (miembro del coro universitario por 1.5 años). \\
 \end{tabular}
 %----------------------------------------------------------------------------------------
 \end{document}
